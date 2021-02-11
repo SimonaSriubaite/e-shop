@@ -1,38 +1,19 @@
-import React, { useEffect, useState } from "react";
-import { ReactComponent as SourceryLogo } from "assets/logo.svg";
+import React, { Suspense, lazy } from "react";
+import { Route, Switch } from "react-router-dom";
+import { Loader } from "./components";
+
+const HomeLazy = lazy(() => import("./pages/Home/Home"));
 
 function App() {
-  const [instructions, setInstructions] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3008/instructions")
-      .then((res) => res.json())
-      .then(
-        (result) => {
-          setInstructions(result);
-        },
-        (error) => {
-          // handle error here
-        }
-      );
-  }, []);
-
   return (
     <div className="app">
-      <header className="App-header">
-        <SourceryLogo />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/*<Header />*/}
+      <Suspense fallback={<Loader />}>
+        <Switch>
+          <Route exact path="/" component={HomeLazy} />
+        </Switch>
+      </Suspense>
+      {/*<Footer />*/}
     </div>
   );
 }
