@@ -1,0 +1,16 @@
+@import '../../styles/base/base';
+
+.button {
+    border-radius: 2.5rem;
+    outline: none;
+    transition: 0.3s;
+
+    &--cart {
+        align-items: center;
+        background-color: $color-white;
+        border: 1px solid $color-grey;
+        display: flex;
+        height: 4.2rem;
+        padding: 0 1.6rem;
+    }
+}

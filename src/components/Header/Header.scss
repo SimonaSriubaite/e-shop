@@ -1,0 +1,37 @@
+@import '../../styles/base/base';
+
+.header {
+    height: 7.7rem;
+    padding: 1rem;
+
+    &__wrapper {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 131.4rem;
+    }
+
+    &__logo {
+        margin-bottom: 0.8rem;
+        width: 18rem;
+    }
+
+    &__button {
+        margin-right: 21rem;
+    }
+
+    .button {
+        &__price {
+            font-weight: 700;
+            font-size: $font-size-12;
+            line-height: 1.6rem;
+            margin-left: 1.2rem;
+        }
+    }
+
+    .button__icon-cart {
+        height: 1.7rem;
+    }
+}
