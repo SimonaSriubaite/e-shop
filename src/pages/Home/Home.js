@@ -1,11 +1,12 @@
 import React from "react";
+import "./Home.scss";
 
-function Home() {
+const Home = () => {
   return (
-    <div>
+    <div className="home">
       <div>Home</div>
     </div>
   );
-}
+};
 
 export default Home;
