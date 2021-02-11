@@ -1,0 +1,52 @@
+@import '../../styles/base/base';
+
+.card {
+    background-color: $color-white;
+    border: 1px solid $color-sand-3;
+    height: 38.4rem;
+    padding: 1rem;
+
+    &__icon {
+        cursor: pointer;
+        float: right;
+        height: 2.4rem;
+
+        &:hover {
+            fill: $color-yellow;
+        }
+    }
+
+    &__wrapper {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__figure {
+        height: 14.8rem;
+        max-width: 19.4rem;
+
+        &-img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-size: $font-size-15;
+        height: 7.2rem;
+        line-height: 1.2;
+        margin: 0.6rem 0 3rem;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    &__price {
+        color: $color-red;
+        font-size: $font-size-26;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 2.2rem;
+    }
+}

@@ -1,10 +1,13 @@
 import React from "react";
+import { ItemBlock } from "../../components";
 import "./Home.scss";
 
 const Home = () => {
   return (
     <div className="home">
-      <div>Home</div>
+      <div className="home__wrapper">
+        <ItemBlock />
+      </div>
     </div>
   );
 };
