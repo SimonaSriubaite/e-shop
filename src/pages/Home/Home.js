@@ -1,11 +1,15 @@
 import React from "react";
+import { ItemBlock } from "../../components";
+import "./Home.scss";
 
-function Home() {
+const Home = () => {
   return (
-    <div>
-      <div>Home</div>
+    <div className="home">
+      <div className="home__wrapper">
+        <ItemBlock />
+      </div>
     </div>
   );
-}
+};
 
 export default Home;

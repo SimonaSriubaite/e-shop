@@ -1,6 +1,7 @@
 @import '../../styles/base/base';
 
 .button {
+    border: 0;
     border-radius: 2.5rem;
     outline: none;
     transition: 0.3s;
@@ -12,5 +13,21 @@
         display: flex;
         height: 4.2rem;
         padding: 0 1.6rem;
+    }
+
+    &--add {
+        background-color: $color-red;
+        color: $color-white;
+        cursor: pointer;
+        font-size: $font-size-12;
+        font-weight: 600;
+        height: 3.2rem;
+        line-height: 1.6rem;
+        padding: 0.5rem 1rem;
+        width: calc(100% - 3rem);
+
+        &:hover {
+            background-color: $color-dark-red;
+        }
     }
 }

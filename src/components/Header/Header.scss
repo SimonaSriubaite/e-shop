@@ -1,6 +1,7 @@
 @import '../../styles/base/base';
 
 .header {
+    border-bottom: 0.1rem solid $color-sand-2;
     height: 7.7rem;
     padding: 1rem;
 
@@ -24,14 +25,14 @@
 
     .button {
         &__price {
-            font-weight: 700;
             font-size: $font-size-12;
+            font-weight: 700;
             line-height: 1.6rem;
             margin-left: 1.2rem;
         }
-    }
 
-    .button__icon-cart {
-        height: 1.7rem;
+        &__icon-cart {
+            height: 1.7rem;
+        }
     }
 }

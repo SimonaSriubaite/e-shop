@@ -1,0 +1,11 @@
+@import '../../styles/base/base';
+
+.home {
+    background-color: $color-sand;
+    padding-top: 2.4rem;
+
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 131.4rem;
+    }
+}
