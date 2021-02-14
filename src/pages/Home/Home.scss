@@ -55,7 +55,7 @@
         }
 
         &-wrapper {
-            max-height: 87rem;
+            max-height: calc(100% - 10rem);
             -ms-overflow-style: none;
             overflow-y: scroll;
             scrollbar-width: none;
