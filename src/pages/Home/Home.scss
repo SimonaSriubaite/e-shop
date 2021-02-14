@@ -1,11 +1,45 @@
 @import '../../styles/base/base';
+@import '../../styles/mixins/index';
 
 .home {
     background-color: $color-sand;
-    padding-top: 2.4rem;
+    padding-top: 2rem;
 
     &__wrapper {
+        display: flex;
         margin: 0 auto;
         max-width: 131.4rem;
+    }
+
+    .item-block {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-right: 2rem;
+        max-width: 96rem;
+
+        @include respond-to(1100, max) {
+            grid-template-columns: 1fr 1fr 1fr;
+            width: auto;
+        }
+    }
+
+    .basket {
+        background-color: $color-light-grey;
+        box-shadow: 0 3px 6px 0 rgba(200, 200, 200, 0.7);
+        height: calc(100vh - 7.7rem);
+        margin-top: -2rem;
+        padding: 1.6rem;
+        position: sticky;
+        top: 0;
+        width: 33.4rem;
+
+        &__title {
+            color: $color-dark-grey;
+            font-size: $font-size-14;
+            font-weight: 600;
+            line-height: 1.6rem;
+            margin-bottom: 1.6rem;
+        }
     }
 }
