@@ -9,10 +9,21 @@
     &__icon {
         cursor: pointer;
         float: right;
-        height: 2.4rem;
+        height: 2rem;
 
         &:hover {
             fill: $color-yellow;
+        }
+
+        &-gluten {
+            color: $color-grey-2;
+            fill: $color-grey-2;
+            margin-right: 0.5rem;
+
+            &:hover {
+                color: $color-dark-grey-2;
+                fill: $color-grey-2;
+            }
         }
     }
 
