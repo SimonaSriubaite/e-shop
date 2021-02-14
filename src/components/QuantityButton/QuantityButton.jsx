@@ -44,9 +44,7 @@ const QuantityButton = (product) => {
 };
 
 QuantityButton.propTypes = {
-  product: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-  }).isRequired,
+  product: PropTypes.object,
 };
 
 export default QuantityButton;

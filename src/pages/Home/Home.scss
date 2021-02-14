@@ -3,7 +3,11 @@
 
 .home {
     background-color: $color-sand;
-    padding-top: 2rem;
+    padding: 2rem 0;
+
+    @include respond-to(768, max) {
+        padding: 0;
+    }
 
     &__wrapper {
         display: flex;
@@ -18,9 +22,17 @@
         margin-right: 2rem;
         max-width: 96rem;
 
-        @include respond-to(1100, max) {
+        @include respond-to(1240, max) {
             grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 2rem;
             width: auto;
+        }
+
+        @include respond-to(768, max) {
+            grid-gap: 0;
+            grid-template-columns: 1fr;
+            margin: 0;
+            width: 100%;
         }
     }
 
@@ -34,12 +46,32 @@
         top: 0;
         width: 33.4rem;
 
+        @include respond-to(980, max) {
+            padding: 2rem;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 2rem;
+        }
+
         &__title {
             color: $color-dark-grey;
             font-size: $font-size-14;
             font-weight: 600;
             line-height: 1.6rem;
-            margin-bottom: 1.6rem;
+            margin: 0.5rem 0 1.6rem 0;
+        }
+
+        &__icon {
+            height: 1.6rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 1.7rem;
+
+            @include respond-to(980, min) {
+                display: none;
+            }
         }
     }
 }

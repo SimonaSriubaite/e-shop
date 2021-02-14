@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Route, Switch } from "react-router-dom";
 import { Loader, Header, Footer } from "./components";
 import CartProvider from "./contexts/CartContext";
-import { DisplayCartProvider } from "./contexts/displayCart.context";
+import { DisplayProvider } from "./contexts/DisplayContext";
 import "./styles/index.scss";
 
 const HomeLazy = lazy(() => import("./pages/Home/Home"));
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="app">
       <CartProvider>
-        <DisplayCartProvider>
+        <DisplayProvider>
           <Header />
           <Suspense fallback={<Loader />}>
             <Switch>
@@ -19,7 +19,7 @@ function App() {
             </Switch>
           </Suspense>
           <Footer />
-        </DisplayCartProvider>
+        </DisplayProvider>
       </CartProvider>
     </div>
   );

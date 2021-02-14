@@ -1,12 +1,24 @@
 @import '../../styles/base/base';
 
 .footer {
-    align-items: center;
-    background-color: $color-white;
     box-shadow: $box-shadow-small;
-    display: flex;
-    height: 5.2rem;
-    justify-content: flex-end;
-    margin-top: auto;
-    padding: 0.8rem 4rem;
+    height: 100%;
+
+    &__wrapper {
+        max-width: 131.4rem;
+        margin: 0 auto;
+        align-items: center;
+        background-color: $color-white;
+
+        display: flex;
+        height: 5.2rem;
+        justify-content: flex-end;
+        margin-top: auto;
+        padding: 0.8rem 0;
+    }
+
+    &__title {
+        font-size: $font-size-14;
+        opacity: 0.6;
+    }
 }

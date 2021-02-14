@@ -1,9 +1,10 @@
 @import '../../styles/base/base';
+@import '../../styles/mixins/index';
 
 .header {
     border-bottom: 0.1rem solid $color-sand-2;
     height: 7.7rem;
-    padding: 1rem;
+    padding: 0 0 0 1rem;
 
     &__wrapper {
         align-items: center;
@@ -21,10 +22,18 @@
 
     &__button {
         margin-right: 23.8rem;
+
+        @include respond-to(980, max) {
+            margin-right: 0;
+        }
     }
 
     .button {
         position: relative;
+
+        @include respond-to(980, max) {
+            border: none;
+        }
 
         &__price {
             font-size: $font-size-12;
@@ -48,10 +57,30 @@
             position: absolute;
             top: 0.2rem;
             width: 2.2rem;
+
+            @include respond-to(980, max) {
+                display: none;
+            }
         }
 
-        &__icon-cart {
-            height: 1.7rem;
+        &__icon {
+            &-cart {
+                height: 1.7rem;
+
+                @include respond-to(980, max) {
+                    display: none;
+                }
+            }
+
+            &-mobile {
+                display: none;
+                margin-right: -0.7rem;
+                height: 2rem;
+
+                @include respond-to(980, max) {
+                    display: block;
+                }
+            }
         }
     }
 }

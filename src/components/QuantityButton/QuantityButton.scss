@@ -1,9 +1,15 @@
 @import '../../styles/base/base';
+@import '../../styles/mixins/index';
 
 .qbutton {
     display: flex;
     position: relative;
     width: calc(100% - 3rem);
+
+    @include respond-to(768, max) {
+        width: 17.4rem;
+        justify-content: flex-end;
+    }
 
     &__span {
         color: $color-red;
@@ -34,6 +40,10 @@
         margin: 0 -0.1rem;
         padding: 0 1.5rem;
         width: 7.8rem;
+
+        @include respond-to(768, max) {
+            height: 4rem;
+        }
     }
 
     &__plus {
