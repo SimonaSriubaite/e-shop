@@ -32,7 +32,7 @@
         @include respond-to(980, max) {
             margin-top: -3rem;
             position: absolute;
-            right: 4rem;
+            right: 2rem;
         }
 
         &:hover {
@@ -63,7 +63,7 @@
         @include respond-to(980, max) {
             margin-top: 1.5rem;
             position: absolute;
-            right: 4rem;
+            right: 2rem;
         }
     }
 
