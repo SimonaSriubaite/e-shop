@@ -33,6 +33,7 @@
 
         @include respond-to(980, max) {
             border: 0;
+            cursor: pointer;
         }
 
         &__price {
