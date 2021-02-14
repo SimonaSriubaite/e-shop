@@ -20,15 +20,34 @@
     }
 
     &__button {
-        margin-right: 21rem;
+        margin-right: 23.8rem;
     }
 
     .button {
+        position: relative;
+
         &__price {
             font-size: $font-size-12;
             font-weight: 700;
             line-height: 1.6rem;
             margin-left: 1.2rem;
+        }
+
+        &__quantity {
+            align-items: center;
+            background-color: $color-red;
+            border: 0.2rem solid $color-white;
+            border-radius: 1rem;
+            color: $color-white;
+            display: flex;
+            font-size: $font-size-12;
+            font-weight: 600;
+            height: 2.2rem;
+            justify-content: center;
+            left: 2.4rem;
+            position: absolute;
+            top: 0.2rem;
+            width: 2.2rem;
         }
 
         &__icon-cart {

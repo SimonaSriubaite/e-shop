@@ -30,4 +30,25 @@
             background-color: $color-dark-red;
         }
     }
+
+    &--quantity {
+        background-color: $color-white;
+        border: 0.1rem solid $color-grey-border;
+        border-radius: 3rem 0 0 3rem;
+        height: 3.2rem;
+        width: 4.8rem;
+    }
+
+    &--buy {
+        background-color: $color-light-grey-2;
+        border-radius: 0.3rem;
+        color: $color-dark-grey;
+        cursor: not-allowed;
+        font-size: $font-size-14;
+        font-weight: 600;
+        height: 4.6rem;
+        line-height: 2rem;
+        opacity: 0.5;
+        width: 20rem;
+    }
 }
