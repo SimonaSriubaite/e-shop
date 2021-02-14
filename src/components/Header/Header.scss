@@ -32,7 +32,7 @@
         position: relative;
 
         @include respond-to(980, max) {
-            border: none;
+            border: 0;
         }
 
         &__price {
@@ -63,23 +63,21 @@
             }
         }
 
-        &__icon {
-            &-cart {
-                height: 1.7rem;
+        &__icon-cart {
+            height: 1.7rem;
 
-                @include respond-to(980, max) {
-                    display: none;
-                }
-            }
-
-            &-mobile {
+            @include respond-to(980, max) {
                 display: none;
-                margin-right: -0.7rem;
-                height: 2rem;
+            }
+        }
 
-                @include respond-to(980, max) {
-                    display: block;
-                }
+        &__icon-mobile {
+            display: none;
+            height: 2rem;
+            margin-right: -0.7rem;
+
+            @include respond-to(980, max) {
+                display: block;
             }
         }
     }

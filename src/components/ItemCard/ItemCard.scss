@@ -27,9 +27,9 @@
             margin-right: 0.5rem;
 
             @include respond-to(768, max) {
+                left: 10.5rem;
                 position: absolute;
                 top: 3.4rem;
-                left: 10.5rem;
             }
 
             &:hover {
@@ -78,14 +78,14 @@
         text-align: center;
         word-wrap: break-word;
 
-        &:hover {
-            color: $color-red;
-        }
-
         @include respond-to(768, max) {
             font-size: $font-size-12;
             margin-top: -1.8rem;
             max-width: 20rem;
+        }
+
+        &:hover {
+            color: $color-red;
         }
     }
 
@@ -100,8 +100,8 @@
             bottom: 0;
             font-size: $font-size-18;
             line-height: 1.8;
-            text-align: center;
             position: absolute;
+            text-align: center;
             width: 9.4rem;
         }
     }
@@ -119,8 +119,8 @@
 
     .qbutton {
         @include respond-to(768, max) {
-            position: absolute;
             bottom: 2rem;
+            position: absolute;
             right: 0;
         }
     }

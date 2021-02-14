@@ -29,9 +29,9 @@
         margin: -1.6rem 0 2rem 3rem;
 
         @include respond-to(980, max) {
+            margin-top: -3rem;
             position: absolute;
             right: 4rem;
-            margin-top: -3rem;
         }
 
         &:hover {
@@ -60,9 +60,9 @@
         margin: 1.5rem 0 0 1rem;
 
         @include respond-to(980, max) {
+            margin-top: 1.5rem;
             position: absolute;
             right: 4rem;
-            margin-top: 1.5rem;
         }
     }
 
@@ -89,9 +89,9 @@
 .basket-empty {
     align-items: center;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     height: 80%;
+    justify-content: center;
     width: 30.2rem;
 
     @include respond-to(980, max) {

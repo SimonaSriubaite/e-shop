@@ -1,10 +1,3 @@
-$mobile: 599.5;
-$tablet-min: 600;
-$tablet-mid: 768;
-$tablet-max: 991.5;
-$desktop-min: 992;
-$desktop-max: 1090;
-
 @mixin respond-to($size, $dir) {
     @if ($size == retina) {
         // stylelint-disable media-feature-name-no-vendor-prefix
