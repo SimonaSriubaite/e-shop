@@ -61,7 +61,7 @@
             scrollbar-width: none;
 
             @include respond-to(980, max) {
-                max-height: 88%;
+                max-height: 85%;
             }
 
             &::-webkit-scrollbar {
