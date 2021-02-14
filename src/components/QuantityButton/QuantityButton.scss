@@ -1,0 +1,56 @@
+@import '../../styles/base/base';
+@import '../../styles/mixins/index';
+
+.qbutton {
+    display: flex;
+    position: relative;
+    width: calc(100% - 3rem);
+
+    @include respond-to(1240, max) {
+        width: auto;
+    }
+
+    @include respond-to(768, max) {
+        justify-content: flex-end;
+        width: 17.4rem;
+    }
+
+    &__span {
+        color: $color-red;
+        font-size: $font-size-10;
+        position: absolute;
+        text-align: center;
+        top: -1.4rem;
+        width: 100%;
+    }
+
+    &__minus,
+    &__plus {
+        &-icon {
+            height: 1.2rem;
+        }
+    }
+
+    &__qty {
+        align-items: center;
+        background-color: $color-white;
+        border: 0.1rem solid $color-grey-border;
+        color: $color-dark-grey;
+        display: flex;
+        font-size: $font-size-13;
+        font-weight: 600;
+        height: 3.2rem;
+        justify-content: space-between;
+        margin: 0 -0.1rem;
+        padding: 0 1.5rem;
+        width: 7.8rem;
+
+        @include respond-to(768, max) {
+            height: 4rem;
+        }
+    }
+
+    &__plus {
+        transform: rotate(180deg);
+    }
+}

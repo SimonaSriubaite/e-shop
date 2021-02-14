@@ -1,0 +1,38 @@
+@import '../../styles/base/base';
+@import '../../styles/mixins/index';
+
+.buy-card {
+    align-items: center;
+    background-color: $color-white;
+    bottom: 0;
+    display: flex;
+    margin-left: -1.6rem;
+    padding: 1.6rem 2.4rem;
+    position: absolute;
+    width: 100%;
+
+    @include respond-to(980, max) {
+        margin-left: -2rem;
+    }
+
+    &__span {
+        color: $color-grey-3;
+        font-size: $font-size-12;
+        margin-right: 0.5rem;
+    }
+
+    &__icon {
+        height: 1.4rem;
+        margin-bottom: -0.2rem;
+    }
+
+    &__container {
+        margin-left: 2.4rem;
+    }
+
+    &__sum {
+        font-size: $font-size-16;
+        font-weight: 700;
+        margin-top: 0.7rem;
+    }
+}

@@ -1,11 +1,77 @@
 @import '../../styles/base/base';
+@import '../../styles/mixins/index';
 
 .home {
     background-color: $color-sand;
-    padding-top: 2.4rem;
+    padding: 2rem 0;
+
+    @include respond-to(768, max) {
+        padding: 0;
+    }
 
     &__wrapper {
+        display: flex;
         margin: 0 auto;
         max-width: 131.4rem;
+    }
+
+    .item-block {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-right: 2rem;
+        max-width: 96rem;
+
+        @include respond-to(1240, max) {
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 2rem;
+            width: auto;
+        }
+
+        @include respond-to(768, max) {
+            grid-gap: 0;
+            grid-template-columns: 1fr;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    .basket {
+        background-color: $color-light-grey;
+        box-shadow: 0 3px 6px 0 rgba(200, 200, 200, 0.7);
+        height: calc(100vh - 7.7rem);
+        margin-top: -2rem;
+        padding: 1.6rem;
+        position: sticky;
+        top: 0;
+        width: 33.4rem;
+
+        @include respond-to(980, max) {
+            height: 100%;
+            padding: 2rem;
+            position: absolute;
+            top: 2rem;
+            width: 100%;
+        }
+
+        &__title {
+            color: $color-dark-grey;
+            font-size: $font-size-14;
+            font-weight: 600;
+            line-height: 1.6rem;
+            margin: 0.5rem 0 1.6rem;
+        }
+
+        &__icon {
+            height: 1.6rem;
+            margin: 1.7rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            @include respond-to(980, min) {
+                display: none;
+            }
+        }
     }
 }
