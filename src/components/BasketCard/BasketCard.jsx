@@ -15,28 +15,30 @@ const BasketCard = () => {
           <span className="basket-empty__title">Krepšelis tuščias</span>
         </div>
       )}
-      {cartItems.map((product) => (
-        <div className="basket-card" key={product.id}>
-          <figure className="basket-card__figure">
-            <img
-              className="basket-card__figure-img"
-              src={product.image}
-              alt="Product"
-            />
-          </figure>
-          <div className="basket-card__container">
-            <span className="basket-card__title">{product.title}</span>
-            <QuantityButton id={product.id} />
+      <div className="basket-wrapper">
+        {cartItems.map((product) => (
+          <div className="basket-card" key={product.id}>
+            <figure className="basket-card__figure">
+              <img
+                className="basket-card__figure-img"
+                src={product.image}
+                alt="Product"
+              />
+            </figure>
+            <div className="basket-card__container">
+              <span className="basket-card__title">{product.title}</span>
+              <QuantityButton id={product.id} />
+            </div>
+            <div className="basket-card__container">
+              <TrashBin
+                className="basket-card__icon"
+                onClick={() => remove(product)}
+              />
+              <span className="basket-card__price">&euro;{product.price}</span>
+            </div>
           </div>
-          <div className="basket-card__container">
-            <TrashBin
-              className="basket-card__icon"
-              onClick={() => remove(product)}
-            />
-            <span className="basket-card__price">&euro;{product.price}</span>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </>
   );
 };
