@@ -1,4 +1,7 @@
-🚨 Be sure to update this file according to your team.
+🚨 E-shop
+
+##About
+E-shop is simple e-shop demo, where you can add, increase, decrease and remove products from cart. App is written with React, SCSS and BEM, and is responsive. 
 
 ## Run the project
 * To run this project you will need [Node](https://nodejs.org/en/). We strongly recommend to use [nvm](https://github.com/nvm-sh/nvm) for installing node.
@@ -9,14 +12,9 @@
     * `npm run start-server` - runs server
     * `npm start` - builds project for development
 
+### `npm i`
+After cloning the repository, you need to install dependencies with npm i. 
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm run start-server`
-
-Runs JSON server. Edit `db.json` to update data.
 
 ### `npm start`
 
@@ -40,10 +38,3 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Runs all linters and prettier and shows any warnings/errors in console.
 
-### `npm run storybook`
-
-Runs storybook for development.
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
