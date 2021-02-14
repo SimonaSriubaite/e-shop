@@ -1,6 +1,6 @@
 🚨 E-shop
 
-##About
+## About
 E-shop is simple e-shop demo, where you can add, increase, decrease and remove products from cart. App is written with React, SCSS and BEM, and is responsive. 
 
 ## Run the project
