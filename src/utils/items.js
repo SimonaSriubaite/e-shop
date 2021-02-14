@@ -32,7 +32,7 @@ const items = [
     id: 5,
     image:
       "https://pagrindinis.barbora.lt/api/images/GetInventoryImage?id=1aad60c7-a234-486d-b54f-ddd4d6bfd9b8",
-    title: "Nepasterizuotos granatų sultys SUN365, 250 ml",
+    title: "Juodieji pomidorai KUMATO, 47-57 mm, 1 kg",
     price: 1.79,
   },
   {
